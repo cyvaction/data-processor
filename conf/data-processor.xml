@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <properties>
+		<!-- <output dir="/home/filesystem/sdpp/data_correct_output"/> -->
+		<output dir="E:/data_correct_output"/>
+		<!--true表示去重，false表示不去重-->
+        <remove_repeat>true</remove_repeat>
+    </properties>
+    <!-- 扩展包目录 -->
+	<!-- <plugin dir="/home/filesystem/sdpp/data_correct_engine/ext_libs/" regex=".*\.jar" /> -->
+	<plugin dir="E:/data_correct_engine/ext_libs" regex=".*\.jar" />
+	<!-- 文件过滤 -->
+	<file_filter class="com.yulore.bigdata.data_correct.plugin.old.file_filter.CityFileFilter"></file_filter>
+	<!-- 文件处理器 -->
+	<processors>
+<!-- 		<processor class="com.yulore.bigdata.data_correct.plugin.processor.TestProcessor"/> -->
+		<!-- <processor class="com.yulore.bigdata.data_correct.plugin.old.processor.SourceOfflineProcessor"/> -->
+		<!-- <processor class="com.yulore.bigdata.data_correct.plugin.old.processor.GroupIdOfflineProcessor"/> -->
+<!-- 		<processor class="com.yulore.bigdata.data_correct.plugin.old.processor.city_processor.RepairCityProcessor"/> -->
+		<processor class="com.yulore.bigdata.data_correct.plugin.old.processor.ClusterToCleanProcessor"/>
+	</processors>
+    
+</config>

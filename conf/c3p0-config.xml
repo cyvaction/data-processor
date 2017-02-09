@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	
+	<named-config name="yule">
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://w03.test.yulore.com/yule?useUnicode=true&amp;characterEncoding=utf-8</property>
+		<property name="user">bigdata</property>
+		<property name="password">bigdb@2015qwe</property>
+		<property name="initialPoolSize">5</property>
+		<property name="maxPoolSize">10</property>
+		<property name="minPoolSize">3</property>
+		<property name="maxIdleTime">30</property>
+		<property name="maxStatements">2000</property>
+	</named-config>
+	
+	<named-config name="cluster">
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://w03.test.yulore.com/cluster?useUnicode=true&amp;characterEncoding=utf-8</property>
+		<property name="user">bigdata</property>
+		<property name="password">bigdb@2015qwe</property>
+		<property name="initialPoolSize">5</property>
+		<property name="maxPoolSize">10</property>
+		<property name="minPoolSize">3</property>
+		<property name="maxIdleTime">30</property>
+		<property name="maxStatements">2000</property>
+	</named-config>
+	
+	<named-config name="lnglat">
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://w03.test.yulore.com/lnglat?useUnicode=true&amp;characterEncoding=utf-8</property>
+		<property name="user">bigdata</property>
+		<property name="password">bigdb@2015qwe</property>
+		<property name="initialPoolSize">5</property>
+		<property name="maxPoolSize">10</property>
+		<property name="minPoolSize">3</property>
+		<property name="maxIdleTime">30</property>
+		<property name="maxStatements">2000</property>
+	</named-config>
+	
+</c3p0-config>

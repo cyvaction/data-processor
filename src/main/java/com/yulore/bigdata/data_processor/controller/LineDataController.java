@@ -36,8 +36,8 @@ public class LineDataController {
 	 * @param inputDir
 	 */
 	public void start(String[] args){
-		if(args.length<2){
-			System.err.println("应用程序至少需要两个参数");
+		if(args.length<3){
+			System.err.println("应用程序至少需要三个参数");
 			System.err.println("1、处理器方式，1、并行；2、链式处理");
 			System.err.println("2、线程数(若小于或等于0,则使用1线程)");
 			System.err.println("3、待处理目录或文件");

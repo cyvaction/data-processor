@@ -31,6 +31,7 @@ public class ProcessorConfig {
 			Document doc = Jsoup.parse(new File(configFileName), CharSet.UTF_8);
 			outputPath = doc.select("output").first().attr("dir");
 			removeRepeat = Boolean.valueOf(doc.select("remove_repeat").first().text());
+			LOGGER.info("是否去重：{}",removeRepeat);
 			
 			pluginDir = doc.select("plugin").first().attr("dir");
 			pluginFilterRegex = doc.select("plugin").first().attr("regex");
